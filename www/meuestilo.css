@@ -1,0 +1,212 @@
+/* Meu CSS */
+body,
+html{
+	margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+body{
+	background:url("123.png");
+	background-size:100%;
+	background-attachment:fixed;
+}
+a, a img{
+	text-decoration:none;
+	border:none;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+.principal{
+	width: 960px;
+	color: #000;
+	margin: 0 auto;
+	font-family:sans-serif;
+}
+.cabecalho, 
+.logo, 
+.rodape,
+.menu{
+	width:100%;
+	display:block;
+	clear:both;
+}
+.cabecalho{
+	height:100px;
+}
+.logo-cabecalho{
+	float:left;
+}
+.logo-cabecalho a{
+	font-size:50px;
+	font-style:italic;
+	text-decoration:none;
+	color:#FFF;
+	display:block;
+	padding:20px 0 0 0;
+}
+
+#recherche {
+margin:0 auto;
+padding:0;
+}
+#txtbusca {
+border:0px solid #222;
+background:#EEE;
+width:260px;
+height:24px;
+margin:0 auto;
+padding:5px 0 5px 5px;
+float:left;
+line-height:36px;
+}
+#btnbusca {
+background:#000000;
+position:relative;
+border:0px solid #222;
+color:#FFF;
+margin:0 auto;
+padding:10px;
+border:0 none;
+font-size:11px;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+#btnbusca:hover {
+background:#99cccc;
+}
+
+.recherche{
+	float:right;
+	margin-top:40px;
+	margin-right:10px;
+}
+.menu{
+	background:#000000;
+}
+.menu ul li, 
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu ul li{
+	display:inline-block;
+}
+.menu ul li a{
+	display:block;
+	color:#fff;
+	padding:13px 20px;
+}
+.corpo{
+	position:relative;
+	overflow:hidden;
+}
+.artigos{
+	float:left;
+}
+.artigos, .artigos:before{
+	width:70%;
+}
+.artigos:before{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	background:#B0E0E6;
+	opacity:.4;
+	z-index:-1;
+	content:'';
+}
+.barra-lateral{
+	float:right;
+}
+.barra-lateral, .barra-lateral:before{
+	width:30%;
+}
+.barra-lateral:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	right:0;
+    z-index: -1;
+    background: #B0E0E6;
+	opacity:.4;
+}
+.espacamento{
+	padding:20px;
+}
+.rodape{
+	padding:20px;
+	text-align:center;
+	color:#FFFF00;
+}    
+
+@media screen and (max-width:500px)  {
+	
+	body{
+		background:#ccc url(123.png) 
+		center top repeat;
+	}
+	
+	.principal{
+		float: none;
+		width: 80%;
+	}
+	
+	.cabecalho{
+		display:inline;
+		width: 100%
+	}
+	
+	.logo-cabecalho, .logo-cabecalho a{
+		margin:0 auto;
+		width: 100%;
+		font-size: 40px;
+	}
+	
+	.logo-cabecalho h1{
+		margin: auto;
+		width:90%;
+		margin-bottom:-5px;
+	}
+	
+	.recherche{
+		float:center;
+		margin-left: auto;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 77%;
+	}
+	
+	#txtbusca {
+		width: 200px;
+		height: 22px;
+	}
+	
+	.menu{
+		margin:0 auto;
+		width: 80%;
+		margin-bottom: 10px;
+	}
+	
+	.barra-lateral, .barra-lateral:before{
+		width: 0%;
+	}
+	
+	.artigos, .artigos:before{
+		width: 100%;
+	}
+	
+	.artigos, .barra-lateral{
+		float: none;
+		width: 100%;
+	}
+	
+	.rodape{
+		width: 80%;
+	}
+}   
